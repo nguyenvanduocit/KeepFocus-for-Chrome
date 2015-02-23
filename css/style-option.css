@@ -1,0 +1,91 @@
+/*---------------------------------------------
+	/ Fonts
+*/
+@font-face {
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSansLight.woff");
+}
+
+@font-face {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSansNormal.woff");
+}
+
+/*---------------------------------------------
+	/ Globals
+*/
+*{
+    box-sizing: border-box;
+}
+﻿html, body {
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+
+    /* Disable selection since it gives iChrome a more app-like feel and users should never end up copying text. */
+    cursor: default;
+    -webkit-user-select: none;
+}
+body{
+    color: rgba(0, 0, 0, 0.73);
+}
+h2{
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    color: rgba(0, 0, 0, 0.49)
+}
+.container {
+    width: 50%;
+    line-height: 4em;
+    margin: 5% auto 0;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.search-form{
+    margin-top: 2em;
+    text-align: left;
+}
+.search-form input[type=text], .search-form textarea{
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 300;
+    width:100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    opacity: .5;
+}
+.search-form textarea{
+    height: 150px;
+}
+.search-form label{
+    font-size: 18px;
+    font-weight: 300;
+}
+.search-form .status{
+    color: #ff6d02;
+}
+.search-form .save_button{
+    padding: 10px 15px;
+    width: 100px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}

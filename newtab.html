@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keep Focus</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    @font-face {
+        font-weight: 300;
+        font-style: normal;
+        font-family: "Open Sans";
+        src: url("fonts/OpenSansLight.woff");
+    }
+
+    @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Open Sans";
+        src: url("fonts/OpenSansNormal.woff");
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    ﻿html, body {
+        overflow: hidden;
+    }
+    body{
+        background:rgba(85, 92, 95, 0.14);
+        -webkit-user-select: none;
+    }
+
+    .container{
+        width: 80%;
+        line-height: 4em;
+        margin: 7% auto 0;
+        text-align: center;
+        font-family: "Open Sans", Arial, sans-serif;
+    }
+    .slogan{
+        margin-top: 0;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+        font-size: 4em;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.49);
+    }
+    .tagline{
+        margin: 0;
+        color: rgba(0, 0, 0, 0.49);
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 1.5em;
+    }
+    .search-form{
+        margin-top: 2.5em;
+    }
+    .search-form input[type=text]{
+        font-family: "Open Sans", Arial, sans-serif;
+        padding: 18px;
+        font-size: 18px;
+        font-weight: 300;
+        width:60%;
+        opacity: .7;
+    }
+    .settingButton{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .settingButton:hover{
+        font-weight: 700;
+    }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2 id="slogan" class="slogan"></h2>
+    <h2 id="tagline" class="tagline"></h2>
+    <form class="search-form" action="https://www.google.com/search">
+        <input id="search_query" type="text" name="q" placeholder="Search với Google ..." autofocus/>
+        <input type="hidden" name="ie" value="UTF-8"/>
+    </form>
+</div>
+<div id="setting_link" class="settingButton">Setting</div>
+</body>
+<script src="js/newtab.js"></script>
+</html>
